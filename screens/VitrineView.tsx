@@ -120,8 +120,8 @@ const VitrineView: React.FC<VitrineViewProps> = ({ slug, contentId }) => {
               className="w-24 h-24 rounded-full border-4 border-brand-primary"
             />
             <div>
-              <h1 className="text-4xl font-bold text-white mb-2">{creator.username}</h1>
-              <p className="text-neutral-400 text-lg capitalize">{creator.role}</p>
+              <h1 className="text-2xl font-bold text-white mb-2">{creator.username}</h1>
+              <p className="text-neutral-400 text-sm capitalize">{creator.role}</p>
               <div className="flex gap-6 mt-3">
                 <div className="text-center">
                   <p className="font-bold text-white text-xl">{creator.followers.length}</p>
@@ -154,10 +154,10 @@ const VitrineView: React.FC<VitrineViewProps> = ({ slug, contentId }) => {
             )}
             <button
               onClick={handleCopyLink}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-neutral-700 hover:bg-neutral-600 text-white rounded-lg font-semibold transition-colors"
+              className="flex items-center justify-center gap-2 px-4 py-2 bg-neutral-700 hover:bg-neutral-600 text-white rounded-lg text-sm font-medium transition-colors"
             >
               <CopyIcon />
-              Copy Showcase Link
+              Copy Link
             </button>
           </div>
         </div>
